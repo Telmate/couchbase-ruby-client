@@ -21,7 +21,7 @@ require 'couchbase/version'
 
 Gem::Specification.new do |s|
   s.name        = 'couchbase'
-  s.version     = Couchbase::VERSION
+  s.version     = Couchbase::VERSION.dup
   s.author      = 'Couchbase'
   s.email       = 'support@couchbase.com'
   s.license     = 'ASL-2'

@@ -27,7 +27,7 @@ end
 
 # Patch for MultiJson versions < 1.3.3
 require 'multi_json/version'
-if Gem::Version.new(MultiJson::VERSION) < Gem::Version.new('1.3.3')
+if Gem::Version.new(MultiJson::VERSION.dup) < Gem::Version.new('1.3.3')
   class << MultiJson
     alias :dump :encode
     alias :load :decode
